@@ -1,0 +1,27 @@
+{
+  "name": "dicoding_node_js_submmission",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run test/test.postman_collection.json --environment test/test.postman_environment.json",
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js",
+    "lint": "npx eslint ."
+  },
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "eslint-config-dicodingacademy": "^0.9.4",
+    "eslint-config-google": "^0.14.0",
+    "globals": "^15.10.0",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.10",
+    "nanoid": "^3.3.7"
+  }
+}
